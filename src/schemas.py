@@ -10,6 +10,7 @@ class TextMessage(BaseModel):
     text : str
         Text message to classify.
     """
+
     text: str
 
 
@@ -22,4 +23,5 @@ class PredictionResponse(BaseModel):
     prediction : int
         Predicted label where 0 represents ham and 1 represents spam.
     """
+
     prediction: int

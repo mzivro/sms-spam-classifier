@@ -14,6 +14,7 @@ class ModelService:
     path : str
         Path to the serialized model file.
     """
+
     def __init__(self, path: str):
         """
         Load the trained model from disk or train a new one if necessary.

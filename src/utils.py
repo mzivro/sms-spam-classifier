@@ -99,10 +99,15 @@ def train(path: str = "classifier_model.pkl"):
             (
                 "tfidf",
                 TfidfVectorizer(
-                    max_features=3000, ngram_range=(1, 2), min_df=2, max_df=0.8
+                    max_features=None, ngram_range=(1, 2), min_df=2, max_df=0.9
                 ),
             ),
-            ("clf", LogisticRegression(max_iter=1000, solver="liblinear", C=100)),
+            (
+                "clf",
+                LogisticRegression(
+                    max_iter=1000, solver="liblinear", C=100, random_state=8
+                ),
+            ),
         ]
     )
 

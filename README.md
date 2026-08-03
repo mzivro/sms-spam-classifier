@@ -9,13 +9,10 @@ A machine learning web application for binary SMS classification built with **Fa
 * REST API built with FastAPI
 * Interactive web interface built with Streamlit
 * Automatic model training if no serialized model is found
-* Docker support
 
 ## Tech Stack
 
 * scikit-learn
-* Logistic Regression
-* TF-IDF Vectorizer
 * spaCy
 * FastAPI
 * Pydantic
@@ -23,7 +20,6 @@ A machine learning web application for binary SMS classification built with **Fa
 * Pandas
 * KaggleHub
 * Pickle
-* Docker
 
 ## Model Pipeline
 
@@ -165,6 +161,9 @@ Kaggle link: https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 
 License:
 https://creativecommons.org/licenses/by/4.0/
+
+Reference: \
+Almeida, T. & Hidalgo, J. (2011). SMS Spam Collection [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CC84.
 
 ## License
 
