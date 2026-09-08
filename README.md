@@ -2,7 +2,7 @@
 
 A machine learning web application for binary SMS classification built with **FastAPI**, **Streamlit**, and **scikit-learn**. The application predicts whether a text message is **spam** or **ham** using a TF-IDF feature extractor and a Logistic Regression classifier.
 
-[Try it out]("https://mzivro-sms-spam-clf.streamlit.app/")
+Try it out: https://mzivro-sms-spam-clf.streamlit.app/
 
 ## Features
 
