@@ -2,13 +2,16 @@
 
 A machine learning web application for binary SMS classification built with **FastAPI**, **Streamlit**, and **scikit-learn**. The application predicts whether a text message is **spam** or **ham** using a TF-IDF feature extractor and a Logistic Regression classifier.
 
+[Try it out]("https://mzivro-sms-spam-clf.streamlit.app/")
+
 ## Features
 
-* Binary SMS spam classification
+* Binary SMS spam classification working with around **97% of accuracy**
 * Automatic text preprocessing using spaCy
 * REST API built with FastAPI
 * Interactive web interface built with Streamlit
-* Automatic model training if no serialized model is found
+* Automatic model download from Hugging Face
+* Demo app and training script included
 
 ## Tech Stack
 
@@ -19,9 +22,10 @@ A machine learning web application for binary SMS classification built with **Fa
 * Streamlit
 * Pandas
 * KaggleHub
+* HuggingFaceHub
 * Pickle
 
-## Model Pipeline
+## Model training Pipeline
 
 1. Download the SMS Spam Collection dataset from Kaggle.
 2. Preprocess text:
@@ -110,6 +114,36 @@ http://localhost:8501
 ```
 
 ## API
+
+### GET `/health`
+
+Returns the current health status of the API.
+
+Response
+
+```json
+{
+  "status": "ok"
+}
+```
+
+### GET `/ready`
+
+Checks whether the model has been successfully loaded.
+
+Successful response:
+
+```json
+{
+  "status": "ready"
+}
+```
+
+If the model is not available, the API returns:
+
+```
+503 Service Unavailable
+```
 
 ### POST `/predict`
 

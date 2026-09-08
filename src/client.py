@@ -3,7 +3,7 @@ import requests
 
 API_URL = "http://localhost:8000/predict"
 
-st.title("SMS Spam Classifier")
+st.title("SMS Spam Classifier - Client")
 
 text = st.text_input("Enter text message", width="stretch")
 
